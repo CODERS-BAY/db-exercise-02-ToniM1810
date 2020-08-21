@@ -12,3 +12,25 @@ Gib alle Regionen (region_name) der Tabelle „regions“ aus und gib der Tabell
 Gib alle Jobtitel (job_title) und die zugehörige ID (job_id) der Tabelle „jobs“ aus und ordne sie aufsteigend abhängig vom Jobtitel.
 Gib alle Location IDs (location_id) der Tabelle „departments“ aus und sorge dafür, dass jeder Eintrag nur einmal vorkommt. 
 
+select * from employees;
+
+select first_name, last_name from employees;
+
+select last_name from employees order by last_name asc;
+
+select first_name, last_name, manager_id from employees where manager_id=100;
+
+select distinct manager_id from employees;
+
+
+select country_name from countries;
+
+select city, country_id from locations;
+
+select region_name AS 'Region' from regions;
+
+select job_title, job_id from jobs order by job_title asc;
+
+select distinct location_id from departments;
+
+
